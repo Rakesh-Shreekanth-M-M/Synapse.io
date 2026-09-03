@@ -12,7 +12,7 @@ export default function MessagesPage() {
   const [searchQuery, setSearchQuery] = useState('')
 
   const filtered = conversations.filter((c) =>
-    c.participant.name.toLowerCase().includes(searchQuery.toLowerCase())
+    c.participant?.name.toLowerCase().includes(searchQuery.toLowerCase())
   )
 
   const handleSend = () => {
@@ -50,17 +50,17 @@ export default function MessagesPage() {
             >
               <div className="relative shrink-0">
                 <img
-                  src={convo.participant.avatar}
-                  alt={convo.participant.name}
+                  src={convo.participant?.avatar}
+                  alt={convo.participant?.name}
                   className="h-11 w-11 rounded-full ring-2 ring-primary/10"
                 />
-                {convo.participant.isOnline && (
+                {convo.participant?.isOnline && (
                   <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-card bg-green-400" />
                 )}
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium truncate">{convo.participant.name}</span>
+                  <span className="text-sm font-medium truncate">{convo.participant?.name}</span>
                   <span className="text-[10px] text-muted-foreground shrink-0">
                     {timeAgo(convo.lastTimestamp)}
                   </span>
@@ -86,24 +86,24 @@ export default function MessagesPage() {
           <div className="flex items-center gap-3">
             <div className="relative">
               <img
-                src={selectedConvo.participant.avatar}
-                alt={selectedConvo.participant.name}
+                src={selectedConvo.participant?.avatar}
+                alt={selectedConvo.participant?.name}
                 className="h-10 w-10 rounded-full ring-2 ring-primary/10"
               />
-              {selectedConvo.participant.isOnline && (
+              {selectedConvo.participant?.isOnline && (
                 <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-card bg-green-400" />
               )}
             </div>
             <div>
-              <h3 className="text-sm font-semibold">{selectedConvo.participant.name}</h3>
+              <h3 className="text-sm font-semibold">{selectedConvo.participant?.name}</h3>
               <p className="text-[11px] text-muted-foreground">
-                {selectedConvo.participant.isOnline ? (
+                {selectedConvo.participant?.isOnline ? (
                   <span className="text-green-400">Online</span>
                 ) : (
                   'Offline'
                 )}
                 {' · '}
-                {selectedConvo.participant.department}
+                {selectedConvo.participant?.department}
               </p>
             </div>
           </div>

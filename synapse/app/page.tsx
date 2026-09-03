@@ -151,7 +151,7 @@ export default function FeedPage() {
                       </button>
                       <button className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors">
                         <MessageCircle className="h-4 w-4" />
-                        {post.comments}
+                        {post.comments.length}
                       </button>
                       <button className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-green-500 transition-colors">
                         <Share2 className="h-4 w-4" />

@@ -14,7 +14,7 @@ export const notifications: Notification[] = [
     id: 'n2',
     type: 'event',
     title: 'Cloud Computing Workshop Tomorrow',
-    body: 'Dr. Rajesh Kumar's workshop in Seminar Hall 1. Bring your laptops!',
+    body: 'Dr. Rajesh Kumar\'s workshop in Seminar Hall 1. Bring your laptops!',
     timestamp: '2026-06-06T18:00:00Z',
     read: false,
     link: '/events',
