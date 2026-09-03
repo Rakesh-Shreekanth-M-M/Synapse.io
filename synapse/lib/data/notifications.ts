@@ -2,8 +2,8 @@ import type { Notification } from '@/lib/types'
 
 export const notifications: Notification[] = [
   {
-    id: 'n1',
-    type: 'placement',
+    id: `n1`,
+    type: `placement`,
     title: `Infosys Drive Registration Open`,
     body: `Campus drive on June 20th. Eligible: CSE, ISE, AI&ML, ECE. Register by June 15th.`,
     timestamp: `2026-06-07T08:00:00Z`,
@@ -11,8 +11,8 @@ export const notifications: Notification[] = [
     link: `/placements`,
   },
   {
-    id: 'n2',
-    type: 'event',
+    id: `n2`,
+    type: `event`,
     title: `Cloud Computing Workshop Tomorrow`,
     body: `Dr. Rajesh Kumar's workshop in Seminar Hall 1. Bring your laptops!`,
     timestamp: `2026-06-06T18:00:00Z`,
@@ -20,8 +20,8 @@ export const notifications: Notification[] = [
     link: `/events`,
   },
   {
-    id: 'n3',
-    type: 'message',
+    id: `n3`,
+    type: `message`,
     title: `New message from Priya Sharma`,
     body: `Hey! Are you attending the hackathon this weekend?`,
     timestamp: `2026-06-06T17:30:00Z`,
@@ -29,8 +29,8 @@ export const notifications: Notification[] = [
     link: `/messages`,
   },
   {
-    id: 'n4',
-    type: 'announcement',
+    id: `n4`,
+    type: `announcement`,
     title: `Semester Exam Schedule Released`,
     body: `8th semester exams begin June 25th. Check the academic portal for your timetable.`,
     timestamp: `2026-06-06T10:00:00Z`,
@@ -38,8 +38,8 @@ export const notifications: Notification[] = [
     link: `/announcements`,
   },
   {
-    id: 'n5',
-    type: 'post',
+    id: `n5`,
+    type: `post`,
     title: `Rohit Verma liked your post`,
     body: `Your project post got a like from Rohit Verma (Google SWE).`,
     timestamp: `2026-06-06T09:15:00Z`,
@@ -47,8 +47,8 @@ export const notifications: Notification[] = [
     link: `/feed`,
   },
   {
-    id: 'n6',
-    type: 'system',
+    id: `n6`,
+    type: `system`,
     title: `Profile incomplete`,
     body: `Add your skills and bio to get 3x more profile views.`,
     timestamp: `2026-06-05T08:00:00Z`,
@@ -56,8 +56,8 @@ export const notifications: Notification[] = [
     link: `/profile/me`,
   },
   {
-    id: 'n7',
-    type: 'placement',
+    id: `n7`,
+    type: `placement`,
     title: `Zoho Walk-in Drive`,
     body: `Zoho is conducting a walk-in drive on June 22nd for CSE and ISE graduates.`,
     timestamp: `2026-06-05T07:00:00Z`,
@@ -65,8 +65,8 @@ export const notifications: Notification[] = [
     link: `/placements`,
   },
   {
-    id: 'n8',
-    type: 'event',
+    id: `n8`,
+    type: `event`,
     title: `Alumni Connect session tomorrow`,
     body: `Join Rohit Verma from Google for a career guidance session at 4PM in Seminar Hall 2.`,
     timestamp: `2026-06-04T16:00:00Z`,
